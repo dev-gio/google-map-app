@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Map</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-wrapper">
+        <h1>Google Maps API</h1>
+        <input type="text" id="address" class="input-address" placeholder="Type an address">
+
+        <div class="result-wrapper">
+            <div><label for="lat">Latitude:</label><span id="lat">-</span></div>
+            <div><label for="lng">Longitude:</label><span id="lng">-</span></div>
+        </div>
+
+        <div class="map" id="map"></div>
+
+    </div>
+
+    <!-- Replace the value of the key parameter with your own API key. (See: https://developers.google.com/maps/documentation/javascript/get-api-key) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Vg0SYEmsftnHe330Kpt_E9fRRaFVmiU&libraries=places&callback=initialize" async defer></script> 
+    <script src="./app.js"></script>  
+</body>
+</html>
